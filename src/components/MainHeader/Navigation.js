@@ -4,6 +4,8 @@ import classes from './Navigation.module.css';
 import AuthContext from "../../store/auth-context";
 
 const Navigation = (props) => {
+  const ctx = React.useContext(AuthContext);
+
   return (
     <>
                 <nav className={classes.nav}>
